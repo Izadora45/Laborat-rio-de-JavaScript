@@ -74,7 +74,7 @@ function ex16(){
     }
 
     document.getElementById("res16").innerText =
-    "Maior: " + maior + " | Menor: " + menor;
+    "Maior: " + maior + " Menor: " + menor;
 }
 
 function ex17(){
