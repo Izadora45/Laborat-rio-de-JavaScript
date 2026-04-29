@@ -1,11 +1,9 @@
-/* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #f4f6f8;
 }
 
-/* 🔝 MENU FIXO */
 .navbar{
     position: fixed;
     top: 0;
@@ -17,14 +15,12 @@ body{
     z-index: 1000;
 }
 
-/* TÍTULO */
 #nav-logo{
     color: #6aa9ff;
     font-size: 18px;
     margin-right: 20px;
 }
 
-/* LISTA */
 .nav-list{
     list-style: none;
     display: flex;
@@ -33,7 +29,6 @@ body{
     margin: 0;
 }
 
-/* LINKS */
 .nav-item a{
     text-decoration: none;
     color: white;
@@ -43,13 +38,11 @@ body{
     transition: 0.3s;
 }
 
-/* 🔵 HOVER (o que você pediu) */
 .nav-item a:hover{
     background-color: #3b6edc;
 }
 
 
-/* 📦 SEÇÕES */
 section{
     margin-top: 100px; /* espaço por causa do menu fixo */
     padding: 30px;
@@ -62,13 +55,13 @@ section{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* TÍTULO */
+
 section h3{
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-/* INPUTS */
+
 input{
     display: block;
     width: 100%;
@@ -78,7 +71,7 @@ input{
     border: 1px solid #ccc;
 }
 
-/* BOTÃO */
+
 button{
     padding: 10px 20px;
     background-color: #3b6edc;
@@ -88,12 +81,12 @@ button{
     cursor: pointer;
 }
 
-/* HOVER BOTÃO */
+
 button:hover{
     background-color: #2f5bc0;
 }
 
-/* RESULTADO */
+
 p{
     margin-top: 10px;
 }
