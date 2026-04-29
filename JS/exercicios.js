@@ -2,10 +2,20 @@ function ex11(){
     let nome = document.getElementById("nome11").value;
     let idade = Number(document.getElementById("idade11").value);
 
-    if(idade >= 18){
-        document.getElementById("res11").innerText = nome + " é maior de idade";
+    if(idade >= 101){
+        document.getElementById("res11").innerText = nome + " é muito velhinho";
+    }else if(idade >=100){
+        document.getElementById("res11").innerText = nome + " é idoso";
+    }else if(idade >=64){
+        document.getElementById("res11").innerText = nome + " é adulto";
+    }else if(idade >=21){
+        document.getElementById("res11").innerText = nome + " é jovem";
+    }else if(idade >=11){
+        document.getElementById("res11").innerText = nome + " é criança";
+    }else if(idade >=2){
+        document.getElementById("res11").innerText = nome + "é bebê";
     }else{
-        document.getElementById("res11").innerText = nome + " é menor de idade";
+        document.getElementById("res11").innerText = nome + " é recém nascido";
     }
 }
 
@@ -74,7 +84,7 @@ function ex16(){
     }
 
     document.getElementById("res16").innerText =
-    "Maior: " + maior + " Menor: " + menor;
+    "Maior: " + maior + " Menor: " + menor; 
 }
 
 function ex17(){
