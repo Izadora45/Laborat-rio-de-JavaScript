@@ -3,71 +3,77 @@
 
 body{
     margin: 0;
-    background-color: #f4f6f8;
+    background-color: #07134d;
 }
 
-.navbar{
+
+.container{
+    display: flex;
+}
+
+
+.menu{
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    width: 220px;
+    height: 100vh;
     background-color: #1e2a3a;
-    padding: 15px;
+    padding: 20px;
     display: flex;
-    align-items: center;
-    z-index: 1000;
-}
-
-#nav-logo{
-    color: #6aa9ff;
-    font-size: 18px;
-    margin-right: 20px;
-}
-
-.nav-list{
-    list-style: none;
-    display: flex;
+    flex-direction: column;
     gap: 10px;
-    padding: 0;
-    margin: 0;
 }
 
-.nav-item a{
-    text-decoration: none;
-    color: white;
-    padding: 8px 12px;
+.menu h2{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+.menu button{
+    text-align: left;
     background-color: #2f3e52;
+    color: white;
+    padding: 10px;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.nav-item a:hover{
+.menu button:hover{
     background-color: #3b6edc;
 }
 
 
-section{
+.conteudo{
+    margin-left: 240px;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.exercicio{
     display: none;
-    margin-top: 100px; 
-    padding: 30px;
     background-color: white;
     width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+    margin: 100px auto 40px auto;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-section:target {
-    display: block;
-}
 
-
-section h3{
-    font-size: 24px;
+.exercicio h2{
+    font-size: 45px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
+span {
+  display: block;
+  margin-bottom: 20px;
+}
 
 input{
     display: block;
@@ -79,23 +85,22 @@ input{
 }
 
 
-button{
+.exercicio button{
     padding: 10px 20px;
-    background-color: #3b6edc;
+    background-color: #4de726;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
+    margin: 20px auto;
 }
 
-
-button:hover{
-    background-color: #2f5bc0;
+.exercicio button:hover{
+    background-color: #80d66a;
 }
 
 
 p{
     margin-top: 10px;
 }
-
-

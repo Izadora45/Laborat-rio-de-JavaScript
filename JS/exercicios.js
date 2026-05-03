@@ -1,3 +1,16 @@
+function mostrar(num) {
+  let exercicios = document.querySelectorAll(".exercicio");
+  
+  exercicios.forEach(div => {
+    div.style.display = "none";
+  });
+  
+  document.getElementById("ex" + num).style.display = "block";
+}
+
+mostrar(11);
+
+
 function ex11(){
     let nome = document.getElementById("nome11").value;
     let idade = Number(document.getElementById("idade11").value);

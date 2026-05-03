@@ -5,117 +5,116 @@
     <title>Laboratório JS</title>
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/exercicios.js" defer></script>
-
 </head>
+
 <body>
 
-    <header>
-        <nav class="navbar">
-            <i class="fa-solid fa-page-slice" id="nav-logo">Exercícios de 11 a 20</i>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#ex11">Exercício 11</a></li>
-                <li class="nav-item"><a href="#ex12">Exercício 12</a></li>
-                <li class="nav-item"><a href="#ex13">Exercício 13</a></li>
-                <li class="nav-item"><a href="#ex14">Exercício 14</a></li>
-                <li class="nav-item"><a href="#ex15">Exercício 15</a></li>
-                <li class="nav-item"><a href="#ex16">Exercício 16</a></li>
-                <li class="nav-item"><a href="#ex17">Exercício 17</a></li>
-                <li class="nav-item"><a href="#ex18">Exercício 18</a></li>
-                <li class="nav-item"><a href="#ex19">Exercício 19</a></li>
-                <li class="nav-item"><a href="#ex20">Exercício 20</a></li>
-            </ul>
+    <div class="container">
+        <nav class="menu">
+            <h2>Exercícios JavaScript</h2>
+            <button onclick="mostrar(11)">Exercício 11</button>
+            <button onclick="mostrar(12)">Exercício 12</button>
+            <button onclick="mostrar(13)">Exercício 13</button>
+            <button onclick="mostrar(14)">Exercício 14</button>
+            <button onclick="mostrar(15)">Exercício 15</button>
+            <button onclick="mostrar(16)">Exercício 16</button>
+            <button onclick="mostrar(17)">Exercício 17</button>
+            <button onclick="mostrar(18)">Exercício 18</button>
+            <button onclick="mostrar(19)">Exercício 19</button>
+            <button onclick="mostrar(20)">Exercício 20</button>
         </nav>
-    </header>
 
-    <main>
-        <section id="ex11">
-            <h3>Ex 11 - Idade</h3>
-            <input type="text" id="nome11" placeholder="Nome">
-            <input type="number" id="idade11" placeholder="Idade">
-            <button onclick="ex11()">Executar</button>
-            <p id="res11"></p>
-        </section>
+        <div class="conteudo">
 
+            <div id="ex11" class="exercicio">
+                <h2>Exercício 11 - Idade</h2>
+                <span>O algoritmo solicita o nome e a idade do usuário. Em seguida, utiliza uma estrutura condicional para verificar em qual faixa etária a idade informada se encaixa. Por fim, exibe uma mensagem com o nome, a idade e a classificação correspondente da pessoa (bebê, criança, jovem, adulto, idoso ou muito velhinho).</span>
+                <input type="text" id="nome11" placeholder="Nome">
+                <input type="number" id="idade11" placeholder="Idade">
+                <button onclick="ex11()">Calcular</button>
+                <p id="res11"></p>
+            </div>
 
-        <section id="ex12">
-            <h3>Ex 12 - Positivo ou Negativo</h3>
-            <input type="number" id="num12" placeholder="Digite um número">
-            <button onclick="ex12()">Executar</button>
-            <p id="res12"></p>
-        </section>
+            <div id="ex12" class="exercicio">
+                <h2>Exercício 12</h2>
+                <span>O algoritmo solicita um número ao usuário. Em seguida, utiliza uma estrutura condicional para verificar se o valor informado é maior que zero (positivo) ou menor que zero (negativo). Por fim, exibe uma mensagem na tela informando a classificação do número digitado.</span>
+                <input type="number" id="num12" placeholder="Número">
+                <button onclick="ex12()">Verificar</button>
+                <p id="res12"></p>
+            </div>
 
+            <div id="ex13" class="exercicio">
+                <h2>Exercício 13</h2>
+                <span>O algoritmo solicita um número ao usuário. Em seguida, utiliza uma estrutura condicional para verificar se o resto da divisão desse número por 2 é igual a zero. Por fim, exibe uma mensagem na tela informando se o número digitado é par ou ímpar.</span>
+                <input type="number" id="num13" placeholder="Número">
+                <button onclick="ex13()">Verificar</button>
+                <p id="res13"></p>
+            </div>
 
-        <section id="ex13">
-            <h3>Ex 13 - Par ou Ímpar</h3>
-            <input type="number" id="num13" placeholder="Digite um número">
-            <button onclick="ex13()">Executar</button>
-            <p id="res13"></p>
-        </section>
+            <div id="ex14" class="exercicio">
+                <h2>Exercício 14</h2>
+                <span>O algoritmo solicita o número da conta, o saldo, o débito e o crédito do cliente. Em seguida, calcula o saldo atual subtraindo o débito e somando o crédito ao saldo antigo. Por fim, utiliza uma estrutura condicional para exibir o valor calculado e a mensagem "Saldo Positivo" ou "Saldo Negativo".</span>
+                <input type="number" id="saldo14" placeholder="Saldo">
+                <input type="number" id="debito14" placeholder="Débito">
+                <input type="number" id="credito14" placeholder="Crédito">
+                <button onclick="ex14()">Calcular</button>
+                <p id="res14"></p>
+            </div>
 
+            <div id="ex15" class="exercicio">
+                <h2>Exercício 15</h2>
+                <span>O algoritmo solicita uma letra ao usuário. Em seguida, utiliza uma estrutura condicional para verificar se a letra informada é "F", "M" ou qualquer outro caractere. Por fim, exibe na tela a mensagem correspondente: "Feminino", "Masculino" ou "Sexo Inválido".</span>
+                <input type="text" id="sexo15" placeholder="F ou M">
+                <button onclick="ex15()">Verificar</button>
+                <p id="res15"></p>
+            </div>
 
-        <section id="ex14">
-            <h3>Ex 14 - Saldo</h3>
-            <input type="number" id="saldo14" placeholder="Saldo">
-            <input type="number" id="debito14" placeholder="Débito">
-            <input type="number" id="credito14" placeholder="Crédito">
-            <button onclick="ex14()">Executar</button>
-            <p id="res14"></p>
-        </section>
+            <div id="ex16" class="exercicio">
+                <h2>Exercício 16</h2>
+                <span>O algoritmo solicita três números ao usuário. Em seguida, utiliza estruturas condicionais para comparar os valores entre si e descobrir qual deles é o maior e qual é o menor. Por fim, exibe na tela o maior e o menor número encontrados.</span>
+                <input type="number" id="n1" placeholder="Número 1">
+                <input type="number" id="n2" placeholder="Número 2">
+                <input type="number" id="n3" placeholder="Número 3">
+                <button onclick="ex16()">Calcular</button>
+                <p id="res16"></p>
+            </div>
 
+            <div id="ex17" class="exercicio">
+                <h2>Exercício 17</h2>
+                <span>O algoritmo solicita o salário atual do colaborador. Em seguida, utiliza uma estrutura condicional para verificar em qual faixa salarial ele se encaixa e calcula o percentual de aumento correspondente. Por fim, exibe na tela o salário antigo, o percentual aplicado, o valor do aumento e o novo salário corrigido.</span>
+                <input type="number" id="sal17" placeholder="Salário">
+                <button onclick="ex17()">Calcular</button>
+                <p id="res17"></p>
+            </div>
 
-        <section id="ex15">
-            <h3>Ex 15 - Sexo</h3>
-            <input type="text" id="sexo15" placeholder="Digite F ou M">
-            <button onclick="ex15()">Executar</button>
-            <p id="res15"></p>
-        </section>
+            <div id="ex18" class="exercicio">
+                <h2>Exercício 18</h2>
+                <span>O algoritmo solicita o valor da hora e a quantidade de horas trabalhadas no mês. Em seguida, calcula o salário bruto e utiliza uma estrutura condicional para determinar a faixa de desconto do Imposto de Renda. Por fim, calcula os demais descontos e exibe na tela o detalhamento completo da folha de pagamento e o salário líquido.</span>
+                <input type="number" id="hora18" placeholder="Valor hora">
+                <input type="number" id="mes18" placeholder="Horas mês">
+                <button onclick="ex18()">Calcular</button>
+                <p id="res18"></p>
+            </div>
 
+            <div id="ex19" class="exercicio">
+                <h2>Exercício 19</h2>
+                <span>O algoritmo solicita os três lados de um triângulo. Em seguida, utiliza uma estrutura condicional para verificar se os valores informados realmente podem formar um triângulo. Por fim, classifica e exibe na tela se ele é equilátero, isósceles ou escaleno.</span>
+                <input type="number" id="l1" placeholder="Lado 1">
+                <input type="number" id="l2" placeholder="Lado 2">
+                <input type="number" id="l3" placeholder="Lado 3">
+                <button onclick="ex19()">Verificar</button>
+                <p id="res19"></p>
+            </div>
 
-        <section id="ex16">
-            <h3>Ex 16 - Maior e Menor</h3>
-            <input type="number" id="n1" placeholder="Número 1">
-            <input type="number" id="n2" placeholder="Número 2">
-            <input type="number" id="n3" placeholder="Número 3">
-            <button onclick="ex16()">Executar</button>
-            <p id="res16"></p>
-        </section>
+            <div id="ex20" class="exercicio">
+                <h2>Exercício 20</h2>
+                <span>O algoritmo solicita um número correspondente a um determinado ano. Em seguida, utiliza uma estrutura condicional para verificar se o valor informado atende às regras matemáticas de um ano bissexto. Por fim, exibe uma mensagem na tela informando se o ano digitado é bissexto ou não.</span>
+                <input type="number" id="ano" placeholder="Ano">
+                <button onclick="ex20()">Verificar</button>
+                <p id="res20"></p>
+            </div>
 
-        
-
-        <section id="ex17">
-            <h3>Ex 17 - Salário</h3>
-            <input type="number" id="sal17" placeholder="Digite o Salário Atual">
-            <button onclick="ex17()">Executar</button>
-            <p id="res17"></p>
-        </section>
-
-
-        
-        <section id="ex18">
-            <h3>Ex 18 - Folha</h3>
-            <input type="number" id="hora18" placeholder="Valor hora">
-            <input type="number" id="mes18" placeholder="Horas mês">
-            <button onclick="ex18()">Executar</button>
-            <p id="res18"></p>
-        </section>
-
-
-        <section id="ex19">
-            <h3>Ex 19 - Triângulo</h3>
-            <input type="number" id="l1" placeholder="lado 1">
-            <input type="number" id="l2" placeholder="lado 2">
-            <input type="number" id="l3" placeholder="lado 3">
-            <button onclick="ex19()">Executar</button>
-            <p id="res19"></p>
-        </section>
-
-
-        <section id="ex20">
-            <h3>Ex 20 - Bissexto</h3>
-            <input type="number" id="ano" placeholder="Digite o ano">
-            <button onclick="ex20()">Executar</button>
-            <p id="res20"></p>
-        </section>
-    </main>
+        </div>
+    </div>
 </body>
 </html>
